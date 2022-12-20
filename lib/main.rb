@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-puts "Which day's challenge would you like to see? [1-3]"
+puts "Which day's challenge would you like to see? [1-4]"
 day = gets.chomp
 
 puts "Which challenge of the day would you like to see? [1/2]"

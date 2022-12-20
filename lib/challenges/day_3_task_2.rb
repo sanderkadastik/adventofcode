@@ -27,8 +27,7 @@ class Challenge
     @badge_priorities_sum = 0
     
     file_data.each_slice(3).to_a.each {|rucksacks|
-      badge_priority = @priorities[(rucksacks[0].chars & rucksacks[1].chars & rucksacks[2].chars)[0].to_sym]
-      @badge_priorities_sum += badge_priority
+      @badge_priorities_sum += @priorities[(rucksacks[0].chars & rucksacks[1].chars & rucksacks[2].chars)[0].to_sym]
     }
 
     return @badge_priorities_sum
