@@ -150,7 +150,6 @@ class FileSystem
     currently_used = @directories["/"].final_size
     empty_space_on_disk = disk_size - currently_used
     needs_to_be_deleted = needed_size - empty_space_on_disk
-    p needs_to_be_deleted
     
     current_candidate = @directories["/"].final_size
     
