@@ -12,7 +12,7 @@ cd <adventofcode-root>/lib
 ruby main.rb
 ```
 
-3. You will be asked which day and task you would like to run
+3. You will be asked which day's challenge and task you would like to run
 4. That's it
 
 More information - https://adventofcode.com/
