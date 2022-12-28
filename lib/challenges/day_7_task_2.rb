@@ -14,8 +14,10 @@ class Challenge
     file_data.each {|row|
       file_system.process_row(row)
     }
-    file_system.current_command.run(file_system)
-    
+    if !file_system.current_command.is_finished
+      file_system.current_command.run(file_system)
+    end
+
     # Calculate directory sizes
     file_system.calculate_directory_sizes
 
