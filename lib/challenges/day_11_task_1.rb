@@ -1,17 +1,20 @@
 #!/usr/bin/ruby
 
 class Challenge
+
   # Variables
   attr_reader :new_monkey
   
+  # Static Variables
   @@controller
   
   # Constants
   INPUT_FILE_NAME = "day_11"
+  ROUNDS = 20
+
   
   def initialize
-    rounds = 20
-    @@controller = KeepAwayController.new(rounds)
+    @@controller = KeepAwayController.new(ROUNDS)
   end
   
   def process
@@ -78,10 +81,6 @@ class Challenge
       @@controller.add_new_monkey(@new_monkey)
       is_new_monkey_added = true
     end
-  end
-  
-  def get_result
-    return 0
   end
   
   
